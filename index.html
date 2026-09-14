@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REDMAN | Phonk Music</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand"><img src="logo.png" alt="REDMAN"><span>REDMAN</span></div>
+    <nav>
+      <a class="active" href="#home">خانه</a>
+      <a href="#songs">آهنگ‌ها</a>
+      <a href="#artists">خواننده‌ها</a>
+    </nav>
+    <input id="search" type="search" placeholder="جستجوی آهنگ...">
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">PHONK MUSIC</p>
+        <h1>RED<span>MAN</span></h1>
+        <p class="tagline">Best Phonk Music • Dark Vibes • No Limits</p>
+        <a class="cta" href="#songs">▶ گوش دادن به آهنگ‌ها</a>
+      </div>
+      <img class="hero-logo" src="logo.png" alt="REDMAN Logo">
+    </section>
+
+    <section id="songs" class="section">
+      <div class="section-title"><h2>🎵 جدیدترین آهنگ‌ها</h2></div>
+      <div id="songList" class="grid"></div><div id="player" class="player">
+      <div class="player-info"><span class="mini-disc">🎧</span><div><small>در حال پخش</small><strong id="now">هیچ آهنگی انتخاب نشده</strong></div></div>
+      <button id="toggle" class="main-play">▶</button>
+      <input id="progress" type="range" min="0" max="100" value="0">
+      <span id="time">0:00 / 0:00</span>
+      <audio id="audio"></audio>
+    </div>
+    </section>
+
+    <section id="artists" class="section">
+      <div class="section-title"><h2>🎤 خواننده‌های برتر</h2></div>
+      <div class="artists">
+        <div>Kordhell</div><div>MoonDeity</div><div>INTERWORLD</div>
+        <div>Dxrk ダーク</div><div>Scarlxrd</div><div>KSLV Noh</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>REDMAN — Phonk Music Forever ❤️</footer>
+  <script src="script.js"></script>
+</body>
+</html>
